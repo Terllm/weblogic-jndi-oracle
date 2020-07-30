@@ -6,12 +6,10 @@ import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ImportResource;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.WebApplicationInitializer;
@@ -20,8 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication()
-@MapperScan("com.weblogic.rest.demo.mapper")
-@ImportResource({"classpath:spring-dataSource.xml"})
+@MapperScan("com.terllm.demo.mapper")
+/*@ImportResource({"classpath:spring-dataSource.xml"})*/
 public class DemoApplication extends SpringBootServletInitializer implements WebApplicationInitializer {
 
 
